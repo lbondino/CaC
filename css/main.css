@@ -1,0 +1,242 @@
+@import url("reset.css");
+@import url("adopta.css");
+@import url("faq.css");
+@import url("contacto.css");
+@import url("saludo.css");
+
+:root {
+    --color-primario: #9364AC;
+    --color-sec: #64CAD6;
+    --color-ter: #e3e166;
+    --color-cuarto: #B3A5DA;
+    --color-quinto: #B7EC9E;
+    --color-claro: #f2f2f2;
+    --color-oscuro: #0d0d0d;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+html {
+    font-family: 'Raleway';
+}
+
+header {
+    min-height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primario);
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-ter);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--color-sec);
+}
+
+.logo {
+    display: flex;
+    justify-content: left;
+}
+
+.logo .loguito {
+    width: 6rem;
+    height: auto;
+}
+
+.logo .patitas {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1.8rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+.menu-item i {
+    padding: .3rem;
+}
+
+.contenido h1 {
+    color: var(--color-primario);
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 12rem;
+    font-weight: bold;
+}
+
+.contenido h3 {
+    color: var(--color-primario);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.img-central {
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.img-central img {
+    width: 75%;
+}
+
+.pregunta {
+    font-weight: bold;
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+}
+
+.datos {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.subtexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+
+.subtexto p {
+    max-width: 100%;
+}
+
+
+
+/* Pie de pagina */
+.footer {
+    background-color: var(--color-primario);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+.footer p {
+    color: var(--color-ter);
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.footer .redes {
+    margin-left: 10px;
+}
+
+.animalesvarios {
+    text-align: center;
+}
+
+
+/* Breakpoints */
+
+@media (max-width: 1200px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav {
+        padding: 2rem 0 .2rem;
+    }
+
+    .contenido h1 {
+        margin-top: 15rem;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        flex-direction: column;
+    }
+
+    .menu-item i {
+        display: none;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+
+    .menu-list {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    .menu-list {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .contenido h1 {
+        font-size: 2rem;
+    }
+
+    .contenido h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

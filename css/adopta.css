@@ -1,0 +1,32 @@
+.tit-sub {
+    text-align: center;
+    font-weight: bold;
+}
+
+.car-perros {
+    padding: 2rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+#carousel-perros {
+    max-width: 600px;
+    padding: 1rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+
+.car-gatos {
+    padding: 2rem;
+    margin-top: 4rem;
+    font-weight: bold;
+}
+
+#carousel-gatos {
+
+    max-width: 600px;
+    padding: 1rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}

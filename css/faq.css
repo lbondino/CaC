@@ -1,0 +1,45 @@
+.tit-ppal {
+  padding-bottom: 4rem;
+}
+
+details summary {
+  padding: 1rem 0;
+  display: flex; 
+  align-items: center; 
+}
+
+.contenedor-gral {
+  max-width: 70%;
+  margin: 0 auto 3rem;
+}
+
+p {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+details summary::before {
+  content: "⮞ ";
+  color: var(--color-primario);
+  font-size: 1.5rem;
+  margin-right: 0.5rem; 
+  line-height: 1;
+}
+
+details summary h3 {
+  margin: 0; 
+  font-size: 1.2rem; 
+  line-height: 1;
+}
+
+
+@media screen and (max-width: 1128px) {
+  details summary h3.preg-items {
+    text-align: left; 
+  }
+}
+
+details[open] summary::before {
+  content: "⮟ ";
+}
+
